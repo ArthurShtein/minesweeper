@@ -16,18 +16,29 @@
 
     <h3> Choose difficulty:</h3>
     <button onclick="difficulty(this)">Easy</button>
-    <button onclick="difficulty(this)"">Medium</button>
-    <button onclick="difficulty(this)"">Hard</button>
-    <div class="restart-button"></div><button onclick="restart(this)"> 😀 </button>
+    <button onclick="difficulty(this)">Medium</button>
+    <button onclick="difficulty(this)">Hard</button>
+    <div class="restart-button"></div><button class ="reset" onclick="restart(this)"> 😀 </button>
 
+    <div class="lifes">💖 💖 💖<br></div>
+    <hr>
     <table border="1" cellpadding="10">
         <tbody class="board"></tbody>
     </table>
+    <div><span class="msg"></span></div>
 
+    <h4 class="flags"> Flags Marked: 0</h4>
+
+    <div class="timer">
+        <h4>Timer: 0</h4>
+    </div> 
 
     <script src="js/utils.js"></script>
     <script src="js/mines.js"></script>
+
 </body>
+
+<footer> Made by Arthur Shtein ©</footer>
 <td class=""></td>
 </html>
 

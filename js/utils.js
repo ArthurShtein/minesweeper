@@ -70,16 +70,6 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
-function creatBoard(gSize = 4) {
-  var gameBoard = [];
-  for (var i = 0; i < gSize; i++) {
-    gameBoard[i] = [];
-    for (var j = 0; j < gSize; j++) {
-      gameBoard[i][j] = randomNum(gNums);
-    }
-  }
-  return gameBoard;
-}
 
 function renderBoard(board) {
   var strHtml = '';
